@@ -13,9 +13,6 @@ def load_data(filename):
 
 def process_data(data):
     cleaned_data = [datum for datum in data if datum not in GARBAGE]
-    data_dict = {}
-    # for i in range(0, len(cleaned_data), 2):
-    #     data_dict[cleaned_data[i]] = cleaned_data[i+1]
     return cleaned_data
 
 def get_text(file_name):
